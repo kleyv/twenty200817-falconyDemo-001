@@ -1,0 +1,7 @@
+# To be done. It'd be greate to be able to use simple_form_for and get to use
+# collections
+<%= simple_form_for(@trip) do |f| %>
+  <%= f.input :origin_id, collection:  @countries %>
+  <%= f.input :destination_id, collection: @countries %>
+  <%= f.submit %>
+<% end %>

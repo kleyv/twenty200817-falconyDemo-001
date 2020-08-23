@@ -1,0 +1,12 @@
+<h1>Homepage</h1>
+
+<!-- Form to GET the values to be passed onto the Trips controller -->
+<form action="/search">
+<!--   <input type="text" name="origin_id" placeholder="origin">
+  <input type="text" name="destination_id" placeholder="destination"> -->
+  <%= select_tag(:origin_id, options_for_select(@countries)) %>
+  <%= select_tag(:destination_id, options_for_select(@countries)) %>
+
+  <input type="submit" value="Search">
+</form>
+
